@@ -1,30 +1,285 @@
 body {
-    color: white;
-    /* box-sizing: border-box; */
-    /* margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    user-select: none; */
-    /* background-color: rgba(27, 27, 27, 0.2); */
-    
+  margin: 0;
+  padding: 0;
+  /* white-space: nowrap; */
+  user-select: none;
+  background-color: #222;
 }
 
 .container {
-    width: 100%;
-    border:10px;
+  width: 100vw;
+  border: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.sc1 .sc2 .sc3 {
-    width: 100vw;
-    height: 100vh;
+.container > div {
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid red;
 }
-
 
 .sc1 {
-    border: brown;
-    height: 100vh;
 }
 
 .sc2 {
-    border: blue;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
+.light {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  /* background-color: darkgreen; */
+  width: 70vw;
+  height: 40vh;
+  transform: translateY(-70%);
+  overflow: hidden;
+}
+
+.light h1 {
+  font-family: Helvetica;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 8.5rem;
+  letter-spacing: 2.5rem;
+  position: relative;
+  /* animation: spotlight 5s infinite; */
+}
+
+.light h1::after {
+  content: attr(data-char);
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* font-size: 8rem;
+    letter-spacing: 2.5rem; */
+  -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+  clip-path: ellipse(100px 100px at 0% 50%);
+  animation: spotlight 4s infinite;
+  /* transform: rotate(90deg); */
+  background-image: url(../imgs/pll.png);
+  /* background-size: 150%; */
+  background-position: center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes spotlight {
+  0% {
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    clip-path: ellipse(100px 100px at 0% 50%);
+  }
+
+  50% {
+    -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+    clip-path: ellipse(100px 100px at 100% 50%);
+  }
+
+  100% {
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    clip-path: ellipse(100px 100px at 0% 50%);
+  }
+}
+
+
+/* 制作点击的card11 */
+.runbox {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    /* height: 10%; */
+    /* left: 50%; */
+    top: 50%;
+    transform: translateY(-10%);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.card1 {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card1 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    clip-path: circle(120px at center);
+    transition: .5s;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card1:hover .circle {
+    background-color: #0065c3;
+    clip-path: circle(100% at center);
+}
+
+
+.card1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 260px;
+    transition: .5s;
+}
+
+.card1:hover img {
+    left: 75%;
+    height: 300px;
+    filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 4px #fff);
+}
+
+.card1 .content {
+    position: relative;
+    width: 40%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.card1:hover .content {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card1 .content h2 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.card1 .content p {
+    color: #fff;
+    line-height: 1.8;
+}
+
+.card1 .content a {
+    display: inline-block;
+    background: #fff;
+    color: #0165c3;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+
+/*card2*/
+.card2 {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card2 .circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    clip-path: circle(120px at center);
+    transition: .5s;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card2:hover .circle {
+    background-color: rosybrown;
+    clip-path: circle(100% at center);
+}
+
+
+.card2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 350px;
+    transition: .5s;
+}
+
+.card2:hover img {
+    left: 25%;
+    top: 50%;
+    height: 400px;
+    width: 400px;
+    filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 4px #fff);
+}
+
+.card2 .content {
+    position: relative;
+    width: 40%;
+    left: 50%;
+    padding: 20px 20px 20px 40px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.card2:hover .content {
+    top: 0;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card2 .content h2 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.card2 .content p {
+    color: #fff;
+    line-height: 1.8;
+}
+
+.card2 .content a {
+    display: inline-block;
+    background: #fff;
+    color: #0165c3;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+
