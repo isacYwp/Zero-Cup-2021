@@ -130,7 +130,7 @@ body {
 }
 
 .card1:hover .circle {
-    background-color: #0065c3;
+    background-color: #103252;
     clip-path: circle(100% at center);
 }
 
@@ -181,7 +181,7 @@ body {
 .card1 .content a {
     display: inline-block;
     background: #fff;
-    color: #0165c3;
+    color: #103252;
     padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
