@@ -8,7 +8,6 @@ body {
 
 .container {
   width: 100vw;
-  border: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -16,10 +15,56 @@ body {
 .container > div {
   width: 100vw;
   height: 100vh;
-  border: 5px solid red;
 }
 
 .sc1 {
+  position: relative;
+  background-color: #000;
+}
+
+#s1video{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70%;
+  z-index: 0;
+}
+
+.sc1 > img{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.sc1 p{
+  color: whitesmoke;
+}
+
+.sc1 .vidtitle{
+  font-size: 50px;
+  margin: 50px;
+}
+
+.sc1 .vidsubtitle{
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  color: gray;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+.sc1 .vidintro{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  margin: 50px;
 }
 
 .sc2 {

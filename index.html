@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
     <title>电影艺术</title>
   </head>
   <body>
     <div class="container">
-      <div class="sc1"></div>
+      <div class="sc1">
+        <p class="vidtitle">《火车进站》
+          <p class="vidsubtitle">*点击放映机播放/暂停*</p>
+        </p>        
+        <video src="videos/202111041346.mp4"  id="s1video" muted loop autoplay playsinline></video>
+        <img src="imgs/player.png" id="player" onclick="playpause()">
+        <p class="vidintro">1895年，电影的发明者卢米埃尔兄弟利用“活动摄影机”拍摄了世界上第一批电影。我们司空见惯的光影
+          在那时尚为难以理解的高科技。<br>影片《火车进站》中，火车头冲着镜头呼啸而过，当时的观众看了大吃一
+          惊，十分恐慌，以为真的火车迎面而来，吓得惊慌四散。</p>
+      </div>
+
       <div class="sc2">
         <video src="videos/250304087_nb2-1-64~1.mp4" id="s2video" muted loop autoplay playsinline></video>
         <div class="runbox">
@@ -26,8 +37,8 @@
                 <div class="circle"></div>
                 <div class="content">
                     <h2>流派发展</h2>
-                    <p>电影从一块露天的幕布变成室内的光影艺术，从写实记录变成所谓“第七艺术。电影一直在向前，不同的流派涌现在历史舞台，探寻艺术的各种可能性。”</p>
-                    <a href="#">了解更多</a>
+                    <p>电影从一块露天的幕布变成室内的光影盛宴，从写实记录变成所谓“第七艺术”。电影一直在向前，不同的流派涌现在历史舞台，探寻艺术的各种可能性。</p>
+                    <a href="index2/index2.html">了解更多</a>
                 </div>
                 <img src="imgs/电影胶卷.png" alt="img">
             </div>

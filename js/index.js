@@ -6,3 +6,9 @@
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
  */
+
+function playpause(){
+    if(document.querySelector("#s1video").paused){
+        document.querySelector("#s1video").play();
+    }else document.querySelector("#s1video").pause();
+}
