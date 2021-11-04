@@ -1,8 +1,15 @@
+html {
+    overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: 100vw;
   /* white-space: nowrap; */
   user-select: none;
+  overflow-y: auto;
   background-color: #222;
 }
 
@@ -17,6 +24,7 @@ body {
   width: 100vw;
   height: 100vh;
   border: 5px solid red;
+  overflow: hidden;
 }
 
 .sc1 {
