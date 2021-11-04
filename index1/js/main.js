@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-04 08:18:30
- * @LastEditTime: 2021-11-04 14:56:42
+ * @LastEditTime: 2021-11-04 19:08:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Editfun
  * @FilePath: \Zero-Cup-2021\index1\js\main.js
@@ -29,3 +29,6 @@ $(".timecard").hover(function (e) {
 }, function (e) {
     $(".content."+ e.currentTarget.classList[1]).removeClass("hover");
 });
+
+
+$(".timecard:odd").css("right","-140vh");
