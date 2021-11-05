@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>电影流派史</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index2.js"></script>
 </head>
 
 <body>
     <h1>电影流派史</h1>
     <h2>20世纪初</h2>
-    <div class="box-1" style="background-color: rgb(255, 240, 217);color: rgb(77, 55, 55);">
+    <div class="box-1" id="box1" style="background-color: rgb(255, 240, 217);color: rgb(77, 55, 55);">
         <div class="img">
             <img src="img/grandma's.jpg">
             <p>《祖母的放大镜》<br>由George Albert Smith执导，是一部无声短片，片中，年轻的Willy借用
@@ -28,7 +30,7 @@
         </p>
     </div>
 
-    <div class="box-2" style="background-color: rgb(255, 240, 217);color: rgb(77, 55, 55);">
+    <div class="box-2" id="box2" style="background-color: rgb(255, 240, 217);color: rgb(77, 55, 55);">
         <div class="subtitle">欧 洲 先 锋 派</div>
         <p class="para">强调先锋性和纯粹性，过分注重抽象的画面造型以及视觉情绪节奏；反对电影商业
             化，主张电影是小众的无功利的纯粹艺术品；反对叙事，反对情节和人物刻画，主张以抽象的图形、
@@ -44,7 +46,7 @@
         </div>
     </div>
     <h2>1920s</h2>
-    <div class="box-1" style="background-color: whitesmoke;color: rgb(77, 55, 55);">
+    <div class="box-1" id="box3" style="background-color: whitesmoke;color: rgb(77, 55, 55);">
         <div class="img">
             <img src="img/ship.jpg">
             <p>《战舰波将金号》<br>一艘名为波将金号的战舰上，原本这是一艘沙皇海军的骄傲，可是因为连续数
@@ -59,7 +61,7 @@
     </div>
 
     <h2>1940s-1950s</h2>
-    <div class="box-1" style="background-color: whitesmoke;color: rgb(77, 55, 55);margin-left: 70px;">
+    <div class="box-1" id="box4" style="background-color: whitesmoke;color: rgb(77, 55, 55)">
         <div class="img">
             <img src="img/roam.jpg">
             <p>《罗马，不设防的城市》<br>1944年，罗马，被纳粹侵占下伤痕累累的大街。德军肆无忌惮的搜捕着保
@@ -72,13 +74,13 @@
             主张通过普通生活反映社会问题，以日常生活代替虚构的故事：“生活即艺术”;注重展现和讲述，不给观众
             提供“答案”；在选角方面反对职业演员，同时反对编导分家。<br><br>
             在形式上为了营造现实感，用实景拍摄、自然光、长镜头、深焦距。<br><br>
-            代表:罗西里尼《罗马，不设防城市》、《游击队》，德·西卡《擦鞋童》，德·桑蒂斯《艰辛的米》、
+            代表:罗西里尼《罗马，不设防的城市》、《游击队》，德·西卡《擦鞋童》，德·桑蒂斯《艰辛的米》、
             《橄榄树下无和平》，维斯康蒂《大地在波动》，捷尔米《以法律的名义》、《两分钱的希望》。
         </p>
     </div>
 
     <h2>1960s</h2>
-    <div class="box-2" style="background-color: rgb(224, 224, 255);color: rgb(77, 55, 55);">
+    <div class="box-2" id="box5" style="background-color: rgb(224, 224, 255);color: rgb(77, 55, 55);">
         <div class="subtitle">法国新浪潮电影</div>
         <p class="para">受新现实主义影响，强烈反传统、强调艺术创新;将抽象的哲理转化成具像的画面。往往集编
             剧、导演、对自、音乐，甚至制片于一身，形成了统一的制片方式。与传统明星制度相对立，他们启用了大
@@ -98,7 +100,7 @@
     </div>
 
     <h2>1960s至今</h2>
-    <div class="box-1" style="background-color: rgb(235, 235, 253);color: rgb(77, 55, 55);">
+    <div class="box-1" id="box6" style="background-color: rgb(235, 235, 253);color: rgb(77, 55, 55);">
         <div class="img">
             <img src="img/bridge.jpg">
             <p>《魂断蓝桥》<br>第一次世界大战期间，回国度假的陆军中尉罗伊在滑铁卢桥上邂逅了舞蹈演员玛拉</p>
@@ -122,9 +124,18 @@
     </div>
 
 
-    <div style="width:100%;display: flex;margin-top: 200px;">
-        <img src="img/11.jpg" width="25%"><img src="img/22.jpg" width="25%"> <img src="img/33.jpg" width="25%"><img src="img/44.jpg"
-            width="25%">
+    <div class="imgbox">
+        <p>背后的导演</p>
+        <img src="img/11.jpg" id="img1">        
+        <img src="img/22.jpg" id="img2">        
+        <img src="img/33.jpg" id="img3">        
+        <img src="img/44.jpg" id="img4">       
+        <div class="imginfo">
+        <div class="info">Luis Buñuel 西班牙国宝级电影导演、电影剧作家、制片人。1920年创办了西班牙第一个电影俱乐部。1924年，布努埃尔侨居巴黎，任法国先锋派导演让·爱普斯坦的助手，并在其创办的电影学校学习。1928年和西班牙著名画家达利合作，拍摄了超现实主义的奠基之作《一条安达鲁狗》，在巴黎引起强烈轰动。</div>
+        <div class="info">Jean-Luc Godard（让·吕克·戈达尔）法国和瑞士藉导演，法国新浪潮电影的奠基者之一。戈达尔的电影通常被视为挑战和抗衡好莱坞电影的拍摄手法和叙事风格。他也把自己的政治思想注入他的电影，在他的作品里可以经常发现存在主义和马克思主义哲学的影子。</div>
+        <div class="info">Agnès Varda（阿涅斯·瓦尔达），法国女导演，有“新浪潮祖母”的美誉。1954年自编自导第一部剧情长片《短角情事》，独特的叙事结构及低成本的制片方式，被视为法国新浪潮的先声。当时瓦尔达对电影了解得不多，对摄影器材也一知半解，但她对拍片的狂热和旺盛的创作力，却从一开始就令人惊艳。</div>
+        <div class="info"> Stanley Kubrick（斯坦利·库布里克） 好莱坞最褒贬不一也最性格怪异的导演。影片中不可思议的视觉风格为他赢得如潮好评，而他非传统的叙述感又常常会引来轻蔑的挑剔。他的《洛丽塔》被大多数人认为是改编电影中最好的一部，《发条橙》中的暴力场面引发轰动，《2001：太空漫游》对人类历史进程进行史诗般描绘，被评为“有史以来最佳的科幻片”</div>
+        </div>
     </div>
 </body>
 
@@ -152,14 +163,14 @@
         background-color: whitesmoke;
         width: 80%;
         height: auto;
-        margin-left: 30px;
+        margin-left: -100%;
         margin-bottom: 40px;
         margin-top: 50px;
         display: flex;
         align-items: center;
         position: relative;
         border-radius: 0 0 20px 0;
-        
+        opacity: 0;        
     }
     .box-2 {
         background-color: whitesmoke;
@@ -173,6 +184,11 @@
         align-items: center;
         position: relative;
         border-radius: 20px 0 0 0;
+        opacity: 0;
+    }
+
+    .appear{
+        animation: appear 0.8s ease-in-out;
     }
 
     .para {
@@ -214,6 +230,52 @@
         font-size: 10px;
         color: gray;
     }
+
+    .imgbox{
+        width:100%;
+        display: flex;
+        margin-top: 300px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .imgbox > p{
+        position: absolute;
+        top: -60px;
+        right: 10px;
+        font-size: 25px;
+    }
+
+    .imgbox > img{
+        margin: 10px;
+        width: 22%;
+        border:solid 5px rgba(245, 245, 245, 0.6) ;
+    }
+
+    .imgbox .imginfo{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        top:10px
+    }
+
+    .imgbox .imginfo > div{
+        width: 22%;
+        margin: 35px;
+        padding: 8px;
+        background-color: rgba(45, 45, 45, 0.6);
+        opacity: 0;
+    }
+
+    .imginfo .info:hover{
+        animation: show 0.5s;
+        opacity: 1;
+    }
+
+    @keyframes show {
+    0% { opacity: 0; }
+    100%{ opacity: 1; }
+}
 </style>
 
 </body>
