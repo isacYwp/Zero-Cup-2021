@@ -7,7 +7,7 @@ $(function(){
     $("#box1").animate({
         marginLeft:"30px",
         opacity:"1",
-    })
+    },1000)
     }
     });
 
@@ -17,7 +17,7 @@ $(function(){
     if(this_scrollTop > box2_height - 300 ){
     $("#box2").animate({
         opacity:"1",
-    })
+    },1000)
     }
     });
 
@@ -28,7 +28,7 @@ $(function(){
     $("#box3").animate({
         marginLeft:"50px",
         opacity:"1",
-    })
+    },1000)
     }
     });
 
@@ -39,7 +39,7 @@ $(function(){
     $("#box4").animate({
         marginLeft:"70px",
         opacity:"1",
-    })
+    },1000)
     }
     });
 
@@ -49,7 +49,7 @@ $(function(){
     if(this_scrollTop > box5_height - 300 ){
     $("#box5").animate({
         opacity:"1",
-    })
+    },1000)
     }
     });
 
@@ -60,7 +60,7 @@ $(function(){
     $("#box6").animate({
         marginLeft:"20px",
         opacity:"1",
-    })
+    },1000)
     }
     });
 });
