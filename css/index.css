@@ -1,6 +1,6 @@
 @font-face {
   font-family: "shangwei";
-  src: url(../shangwei.ttf);
+  src: url(../xiaomi.otf);
 }
 
 body {
@@ -44,8 +44,8 @@ body {
   justify-content:center;
   align-items: center;
   font-family: shangwei;
-  text-shadow:0 0 3px #FFCDC5,
-  0 0 6px #FFCDC5;
+  text-shadow:0 0 4px #FFCDC5,
+  0 0 8px #FFCDC5;
 }
 .last .letter1 {
   font-size: 8rem;
@@ -78,6 +78,7 @@ body {
         height: 200vh;
         font: 800 39rem "";
         line-height: 120vh;
+        font-family: shangwei;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
