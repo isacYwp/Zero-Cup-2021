@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-04 08:18:30
- * @LastEditTime: 2021-11-05 10:38:36
+ * @LastEditTime: 2021-11-05 18:26:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Editfun
  * @FilePath: \Zero-Cup-2021\index1\js\main.js
@@ -40,7 +40,7 @@ $(".jiantou:odd span").css("margin-left","85px");
 $(".jiantou:odd svg").css('animation','move2 1s infinite');
 
 $('.timecard:eq(0)').click(function (){
-    window.location.href="http://zhidao.baidu.com/question/141095092468292125.html"
+    window.location.href="https://zhuanlan.zhihu.com/p/363311034"
 })
 
 $('.timecard:eq(1)').click(function (){
