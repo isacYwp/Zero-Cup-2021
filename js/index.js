@@ -12,3 +12,8 @@ function playpause(){
         document.querySelector("#s1video").play();
     }else document.querySelector("#s1video").pause();
 }
+
+$(document).ready(function(){
+    $(".vidtitle").delay(1500).fadeIn("slow");
+    $(".vidintro").delay(2000).fadeIn("slow");
+})
