@@ -1,5 +1,6 @@
-html {
-    
+@font-face {
+  font-family: "shangwei";
+  src: url(../shangwei.ttf);
 }
 
 body {
@@ -29,9 +30,44 @@ body {
   padding: 0;
   height: 200vh;
   width: 100%;
+  position: relative;
   overflow-x: hidden;
   background-color: transparent;
   display: flex;
+}
+.sc3 .last {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  font-family: shangwei;
+  text-shadow:0 0 3px #FFCDC5,
+  0 0 6px #FFCDC5;
+}
+.last .letter1 {
+  font-size: 8rem;
+  color: #FFBCB2;
+  transition: all ease 2s 0s;
+  opacity: 0;
+}
+
+.last .letter2 {
+  font-size: 5.5rem;
+  margin-top: 30px;
+  color: #FFBCB2;
+  transition: all ease 2s 1s;
+  opacity: 0;
+
+}
+.last .letter3 {
+  font-size: 12rem;
+  color: #FFBCB2;
+  transition: all ease 4s 2s;
+  opacity: 0;
 }
 
 .background {
