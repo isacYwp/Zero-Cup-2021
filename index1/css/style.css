@@ -42,6 +42,88 @@ body {
   /* transform: translate(-50%,-50%); */
   left: 5vh;
 }
+.jiantou {
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  background-color:transparent;
+  top: 30px;
+  left: 63vh;
+  transition: all .3s ease-out;
+  opacity: 0;
+}
+.jiantou svg {
+  /* filter: invert(1); */
+  animation: move1 1s infinite;
+  color: aqua;
+  margin-left: 0px;
+  /* transform: rotateZ(180deg); */
+}
+
+@keyframes move1 {
+  0% {
+    transform: rotateZ(180deg) translateX(0);
+  }
+
+  50% {
+    transform: rotateZ(180deg) translateX(10px);
+  }
+  
+  100% {
+    transform: rotateZ(180deg) translateX(0);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+.jiantou span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  color: aqua;
+  font-family: fantasy;
+}
+
+.jiantou.count1.hover {
+  opacity: 1;
+  transition: all .4s ease-out;
+}
+.jiantou.count2.hover {
+  opacity: 1;
+  transition: all .4s ease-out;
+}
+.jiantou.count3.hover {
+  opacity: 1;
+  transition: all .4s ease-out;
+}
+.jiantou.count4.hover {
+  opacity: 1;
+  transition: all .4s ease-out;
+}
+.jiantou.count5.hover {
+  opacity: 1;
+  transition: all .4s ease-out;
+}
+.jiantou.count6.hover {
+  opacity: 1;
+  transition: all .4s ease-out;
+}
 
 .timecard p {
   font-family: Arial, Helvetica, sans-serif;
