@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-05 16:55:01
+ * @LastEditTime: 2021-11-05 19:41:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -22,7 +22,7 @@ document.addEventListener("scroll", () => {
   let winh = $(window).height()
   console.log(window.scrollY)
   let scroll = window.scrollY
-  let scrollY = window.scrollY - 2*winh -30
+  let scrollY = window.scrollY - 2*winh -10
   console.log("hi");
   console.log();
   if (scroll <= 1430) {
