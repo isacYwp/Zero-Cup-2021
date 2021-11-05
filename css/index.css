@@ -1,6 +1,6 @@
 @font-face {
   font-family: "shangwei";
-  src: url(../xiaomi.otf);
+  src: url(../XinDiZhaoMeng-1.otf);
 }
 
 body {
@@ -81,6 +81,7 @@ body {
         font-family: shangwei;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: shangwei;
         position: relative;
         /* z-index: 2; */
         text-align: center;
