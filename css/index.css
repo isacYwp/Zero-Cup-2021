@@ -129,6 +129,8 @@ body {
 .sc1 .vidtitle{
   font-size: 70px;
   margin: 50px;
+  display: none;  
+  font-family: "STZhongsong";
 }
 
 .sc1 .vidsubtitle{
@@ -145,12 +147,15 @@ body {
   100%{ opacity: 1; }
 }
 
+
 .sc1 .vidintro{
   position: absolute;
   bottom:-10px;
   right: 0;
   width: 50%;
   margin: 50px;
+  display: none;
+  font-family: "STZhongsong";
   text-indent: 2em;
   font-size: 19px;
 }
@@ -184,6 +189,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 8.5rem;
+  font-family: "STZhongsong";
+  font-weight: bolder;
   letter-spacing: 2.5rem;
   position: relative;
   /* animation: spotlight 5s infinite; */
@@ -255,7 +262,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: #1d1a2c;
     clip-path: circle(120px at center);
     transition: .5s;
     border-radius: 20px;
@@ -351,7 +358,7 @@ body {
 }
 
 .card2:hover .circle {
-    background-color: rosybrown;
+    background-color: rgb(150, 113, 113);
     clip-path: circle(100% at center);
 }
 
@@ -405,7 +412,7 @@ body {
 .card2 .content a {
     display: inline-block;
     background: #fff;
-    color: #0165c3;
+    color: rgb(150, 113, 113);
     padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;

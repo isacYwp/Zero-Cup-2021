@@ -52,3 +52,8 @@ document.addEventListener("scroll", () => {
 
 
 }
+
+$(document).ready(function(){
+    $(".vidtitle").delay(1500).fadeIn("slow");
+    $(".vidintro").delay(2000).fadeIn("slow");
+})
