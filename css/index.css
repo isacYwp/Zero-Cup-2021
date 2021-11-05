@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    
 }
 
 body {
@@ -9,7 +9,6 @@ body {
   width: 100%;
   /* white-space: nowrap; */
   user-select: none;
-  overflow-y: auto;
   background-color: #222;
 }
 
@@ -23,8 +22,49 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-
 }
+/* s3制作 */
+.container .sc3 {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: transparent;
+  display: flex;
+}
+
+.background {
+        background-image: url(../imgs/mountain.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: 50% 50%;
+        height: 200vh;
+        font: 800 39rem "";
+        line-height: 120vh;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        /* z-index: 2; */
+        text-align: center;
+        overflow: hidden;
+}
+.background::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: inherit;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index:-99;
+}
+
 
 .sc1 {
   position: relative;
@@ -43,6 +83,7 @@ body {
   position: absolute;
   bottom: 0;
   z-index: 1;
+  cursor: pointer;
 }
 
 .sc1 p{
@@ -50,7 +91,7 @@ body {
 }
 
 .sc1 .vidtitle{
-  font-size: 50px;
+  font-size: 70px;
   margin: 50px;
   display: none;  
   font-family: "STZhongsong";
@@ -73,12 +114,14 @@ body {
 
 .sc1 .vidintro{
   position: absolute;
-  bottom: 0;
+  bottom:-10px;
   right: 0;
   width: 50%;
   margin: 50px;
   display: none;
   font-family: "STZhongsong";
+  text-indent: 2em;
+  font-size: 19px;
 }
 
 .sc2 {
