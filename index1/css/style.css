@@ -8,7 +8,6 @@ html, body {
 }
 
 html {
-  /* 需要隐藏最外层不可见区域以使视差生效 */
   overflow: hidden;
 }
 
@@ -17,7 +16,6 @@ body {
   height: 100vh;
   perspective: 100px;
   transform-style: preserve-3d;
-  /* 3D的容器要允许overflow才能生效 */
   overflow-y: auto;
   user-select: none;
 }
