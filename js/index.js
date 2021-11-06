@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-05 19:41:22
+ * @LastEditTime: 2021-11-06 09:29:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -22,7 +22,7 @@ document.addEventListener("scroll", () => {
   let winh = $(window).height()
   console.log(window.scrollY)
   let scroll = window.scrollY
-  let scrollY = window.scrollY - 2*winh -10
+  let scrollY = window.scrollY - 2*winh
   console.log("hi");
   console.log();
   if (scroll <= 1430) {
@@ -32,7 +32,7 @@ document.addEventListener("scroll", () => {
   else if (scrollY !== 0) {
     $('.background').css('-webkit-background-clip','text');
     $('.background').css('-webkit-text-fill-color','transparent');
-    background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px )`;
+    background.style.backgroundPosition = `calc(50% - 0.4rem + ${scrollY}px) calc(50% - 0.4rem + ${scrollY}px )`;
   } else {
     background.style.backgroundPosition = "";
   }
@@ -42,7 +42,6 @@ document.addEventListener("scroll", () => {
     $('.letter2').css('opacity', '0');
     $('.letter3').css('opacity', '0');
   } else {
-   console.log('yoooooooooooooooooooooooooo!')
    $('.letter1').css('opacity', '1');
    $('.letter2').css('opacity', '1');
    $('.letter3').css('opacity', '1');

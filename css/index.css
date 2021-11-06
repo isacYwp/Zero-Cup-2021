@@ -44,18 +44,19 @@ body {
   justify-content:center;
   align-items: center;
   font-family: shangwei;
-  text-shadow:0 0 4px #FFCDC5,
-  0 0 8px #FFCDC5;
+  text-shadow:0 0 2.5px #FFCDC5,
+  0 0 5px #FFCDC5;
+  font-weight: 900;
 }
 .last .letter1 {
   font-size: 8rem;
-  color: #FFBCB2;
+  color: #B4CDA1;
   transition: all ease 2s 0s;
   opacity: 0;
 }
 
 .last .letter2 {
-  font-size: 5.5rem;
+  font-size: 6rem;
   margin-top: 30px;
   color: #FFBCB2;
   transition: all ease 2s 1s;
@@ -63,24 +64,24 @@ body {
 
 }
 .last .letter3 {
-  font-size: 12rem;
+  font-size: 11.5rem;
   color: #FFBCB2;
   transition: all ease 4s 2s;
   opacity: 0;
 }
 
 .background {
-        background-image: url(../imgs/mountain.jpg);
+        background-image: url(../imgs/mountain.jpeg);
         background-size: cover;
         width: 100%;
         height: 100%;
         background-position: 50% 50%;
         height: 200vh;
-        font: 800 39rem "";
+        font: 800 37rem "";
         line-height: 120vh;
+        text-shadow: -2 -2 15 rgba(255,255,255,1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: shangwei;
         position: relative;
         /* z-index: 2; */
         text-align: center;
@@ -98,7 +99,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index:-99;
+  z-index: -4;;
 }
 
 
@@ -109,17 +110,24 @@ body {
 
 #s1video{
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0.1rem;
+  top: 0.4rem;
   width: 70%;
   z-index: 0;
 }
 
-.sc1 > img{
+.sc1 > .player{
   position: absolute;
   bottom: 0;
   z-index: 1;
   cursor: pointer;
+  width: 50vw;
+ height: 70vh;
+}
+#player {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 
 .sc1 p{
@@ -127,16 +135,16 @@ body {
 }
 
 .sc1 .vidtitle{
-  font-size: 70px;
-  margin: 50px;
+  font-size: 4.5rem;
+  margin: 3rem;
   display: none;  
   font-family: "STZhongsong";
 }
 
 .sc1 .vidsubtitle{
   position: absolute;
-  top: 200px;
-  left: 50px;
+  top: 15rem;
+  left: 4rem;
   color: gray;
   animation: blink 3s infinite;
 }
@@ -150,14 +158,14 @@ body {
 
 .sc1 .vidintro{
   position: absolute;
-  bottom:-10px;
-  right: 0;
+  bottom: -1rem;
+  right: 1rem;
   width: 50%;
-  margin: 50px;
+  margin: 3rem 4rem;
   display: none;
   font-family: "STZhongsong";
   text-indent: 2em;
-  font-size: 19px;
+  font-size: 1.3rem;
 }
 
 .sc2 {
@@ -251,7 +259,7 @@ body {
     position: relative;
     width: 50%;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 1.2rem;
     display: flex;
     align-items: center;
 }
@@ -263,9 +271,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: #1d1a2c;
-    clip-path: circle(120px at center);
+    clip-path: circle(7.5rem at center);
     transition: .5s;
-    border-radius: 20px;
+    border-radius: 1.2rem;
     overflow: hidden;
 }
 
@@ -280,13 +288,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 260px;
+    height: 16.25rem;
     transition: .5s;
 }
 
 .card1:hover img {
     left: 75%;
-    height: 300px;
+    height: 18.75rem;
     filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 4px #fff);
 }
 
@@ -339,7 +347,7 @@ body {
     position: relative;
     width: 50%;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 1.3rem;
     display: flex;
     align-items: center;
 }
@@ -353,7 +361,7 @@ body {
     background-color:transparent;
     clip-path: circle(120px at center);
     transition: .5s;
-    border-radius: 20px;
+    border-radius: 1.3rem;
     overflow: hidden;
 }
 
@@ -368,16 +376,16 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 350px;
-    width: 350px;
+    height: 21.875rem;
+    width: 21.875rem;
     transition: .5s;
 }
 
 .card2:hover img {
     left: 25%;
     top: 50%;
-    height: 400px;
-    width: 400px;
+    height: 25rem;
+    width: 25rem;
     filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 4px #fff);
 }
 
@@ -435,6 +443,72 @@ body {
     opacity: 1;
 }
 
+@media screen and (max-width: 1600px) {
+  html {
+      font-size: 16px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  html {
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+      font-size: 14px;
+  }
+  #s1video{
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+      font-size: 12px;
+  }
+  #s1video{
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+      font-size: 10px;
+  }
+  #s1video{
+    top: 130px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+      font-size: 8px;
+  }
+  #s1video{
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+      font-size: 7px;
+  }
+  #s1video{
+    top: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+      font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+      font-size: 4px;
+  }
+}
 
 
 
