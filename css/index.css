@@ -99,7 +99,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index:-99;
+  z-index: -4;;
 }
 
 
@@ -347,7 +347,7 @@ body {
     position: relative;
     width: 50%;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 1.3rem;
     display: flex;
     align-items: center;
 }
@@ -470,20 +470,6 @@ body {
   #s1video{
     top: 100px;
   }
-  /* .card1 img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 16.25rem;
-    transition: .5s;
-}
-
-.card1:hover img {
-    left: 75%;
-    height: 300px;
-    filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 4px #fff);
-} */
 }
 
 @media screen and (max-width: 1000px) {
