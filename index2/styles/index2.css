@@ -1,195 +1,197 @@
-body{
-    user-select: none;
-    background-image: url(img/bg.jpg);
-    background-repeat:repeat-y;
-    background-size: contain;
-    color: greenyellow;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-h1{
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(255, 145, 0);
-}
+    body{
+        user-select: none;
+        background-image: url(../img/bg.jpg);
+        background-repeat:repeat-y;
+        background-size: contain;
+        color: greenyellow;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-h2{
-    margin-top: 100px;
-}
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        color: rgb(255, 145, 0);
+    }
 
-.box-1 {
-    background-color: whitesmoke;
-    width: 80%;
-    height: auto;
-    margin-left: -100%;
-    margin-bottom: 40px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 0 0 20px 0;
-    opacity: 0;        
-}
-.box-2 {
-    background-color: whitesmoke;
-    width: 80%;
-    float: right;
-    margin-left: 20%;
-    margin-right: 30px;
-    margin-bottom: 40px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 20px 0 0 0;
-    opacity: 0;
-}
+    h2{
+        margin-top: 100px;
+    }
 
+    .box-1 {
+        background-color: whitesmoke;
+        width: 80%;
+        height: auto;
+        margin-left: -100%;
+        margin-bottom: 40px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-radius: 0 0 20px 0;
+        opacity: 0;        
+    }
+    .box-2 {
+        background-color: whitesmoke;
+        width: 80%;
+        float: right;
+        margin-left: 20%;
+        margin-right: 30px;
+        margin-bottom: 40px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-radius: 20px 0 0 0;
+        opacity: 0;
+    }
 
-.para {
-    margin: 20px;
-    font-size: 1.2vw;
-}
+    
+    .para {
+        margin: 20px;
+        font-size: 1.15rem;
+    }
 
-.img{
-    float: left;
-    height: 95%;
-    width: 40%;
-    padding: 10px;
-    text-align: center;
-}
+    .img{
+        float: left;
+        height: 95%;
+        width: 40%;
+        padding: 10px;
+        text-align: center;
+    }
 
-.box-1 .subtitle{
-    position: absolute;
-    left:15%;
-    top: -5%;
-    font-size: 30px;
-    font-family: "STZhongsong";
-    font-weight: 900;
-    color: rgb(130, 216, 0);
-}
+    .box-1 .subtitle{
+        position: absolute;
+        right:1%;
+        top: 1%;
+        font-size: 30px;
+        font-weight: 900;
+        color: rgb(13,13,13);
+    }
 
-.box-2 .subtitle{
-    position: absolute;
-    right:15%;
-    top: -5%;
-    font-size: 30px;
-    font-family: "STZhongsong";
-    font-weight: 900;
-    color: rgb(130, 216, 0);
-}
+    .box-2 .subtitle{
+        position: absolute;
+        left:1%;
+        top: 1%;
+        font-size: 30px;
+        font-weight: 900;
+        color: rgb(13,13,13);
+    }
 
-.img > img{
-    width:80%;
-}
+    .img > img{
+        width:80%;
+        min-width: 156px;
+        max-width: 160px;
+    }
 
-.img > p{
-    font-size: 10px;
-    color: gray;
-}
+    .img > p{
+        font-size: 10px;
+        color: rgb(105, 105, 105);
+    }
 
-.imgbox{
-    width:100%;
-    display: flex;
-    margin-top: 300px;
-    justify-content: space-between;
-    position: relative;
-}
+    .imgbox{
+        width:100%;
+        display: flex;
+        margin-top: 300px;
+        justify-content: space-between;
+        position: relative;
+    }
 
-.imgbox > p{
-    position: absolute;
-    top: -60px;
-    right: 10px;
-    font-size: 25px;
-}
+    .imgbox > p{
+        position: absolute;
+        top: -60px;
+        right: 10px;
+        font-size: 25px;
+    }
 
-.imgbox > img{
-    margin: 10px;
-    width: 22%;
-    border:solid 5px rgba(245, 245, 245, 0.6) ;
-}
+    .imgbox > img{
+        margin: 10px;
+        width: 22%;
+        border:solid 5px rgba(245, 245, 245, 0.6) ;
+    }
 
-.imgbox .imginfo{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    top:10px
-}
+    .imgbox .imginfo{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        top:10px;
+        font-size: 2.2vh;
+    }
 
-.imgbox .imginfo > div{
-    width: 22%;
-    margin: 35px;
-    padding: 8px;
-    background-color: rgba(45, 45, 45, 0.6);
-    opacity: 0;
-}
+    .imgbox .imginfo > div{
+        width: 22%;
+        margin: 35px;
+        padding: 8px;
+        background-color: rgba(45, 45, 45, 0.6);
+        opacity: 0;
+    }
 
-.imginfo .info:hover{
-    animation: show 0.5s;
-    opacity: 1;
-}
+    .imginfo .info:hover{
+        animation: show 0.5s;
+        opacity: 1;
+    }
 
-@keyframes show {
-0% { opacity: 0; }
-100%{ opacity: 1; }
+    @keyframes show {
+    0% { opacity: 0; }
+    100%{ opacity: 1; }
 }
 @media screen and (max-width: 1600px) {
-html {
-  font-size: 16px;
-}
+  html {
+      font-size: 16px;
+  }
 }
 @media screen and (max-width: 1500px) {
-html {
-  font-size: 15px;
-}
+  html {
+      font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
-html {
-  font-size: 14px;
-}
+  html {
+      font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-html {
-  font-size: 12px;
-}
+  html {
+      font-size: 12px;
+  }
 }
 @media screen and (max-width: 1000px) {
-html {
-  font-size: 10px;
-}
-#s1video{
-top: 130px;
-}
+  html {
+      font-size: 10px;
+  }
+  #s1video{
+    top: 130px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-html {
-  font-size: 8px;
-}
-#s1video{
-top: 200px;
-}
+  html {
+      font-size: 8px;
+  }
+  #s1video{
+    top: 200px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-html {
-  font-size: 7px;
-}
-#s1video{
-top: 200px;
-}
+  html {
+      font-size: 7px;
+  }
+  #s1video{
+    top: 200px;
+  }
 }
 @media screen and (max-width: 600px) {
-html {
-  font-size: 5px;
-}
+  html {
+      font-size: 5px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-html {
-  font-size: 4px;
-}
+  html {
+      font-size: 4px;
+  }
 }
