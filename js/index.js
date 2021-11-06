@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-05 19:41:22
+ * @LastEditTime: 2021-11-06 08:01:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -42,7 +42,6 @@ document.addEventListener("scroll", () => {
     $('.letter2').css('opacity', '0');
     $('.letter3').css('opacity', '0');
   } else {
-   console.log('yoooooooooooooooooooooooooo!')
    $('.letter1').css('opacity', '1');
    $('.letter2').css('opacity', '1');
    $('.letter3').css('opacity', '1');

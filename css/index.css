@@ -78,10 +78,9 @@ body {
         height: 200vh;
         font: 800 39rem "";
         line-height: 120vh;
-        font-family: shangwei;
+        text-shadow: -2 -2 15 beige;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: shangwei;
         position: relative;
         /* z-index: 2; */
         text-align: center;

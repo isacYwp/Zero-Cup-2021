@@ -138,13 +138,13 @@ body {
 .timecard .card_image {
   width: inherit;
   height: inherit;
-  border-radius: 40px;
+  border-radius: 45px;
 }
 
 .timecard .card_image img {
   width: inherit;
   height: inherit;
-  border-radius: 40px;
+  border-radius: 45px;
   object-fit: cover;
 }
 
