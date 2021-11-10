@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-10 12:31:22
+ * @LastEditTime: 2021-11-10 16:26:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -22,10 +22,10 @@ document.addEventListener("scroll", () => {
   let winh = $(window).height()
   console.log(window.scrollY)
   let scroll = window.scrollY
-  let scrollY = window.scrollY - 4*winh
+  let scrollY = window.scrollY - 5*winh
   console.log("hi");
   console.log();
-  let point = 1430 + winh*2
+  let point = 1430 + winh*3
   if (scroll <= point) {
     $('.background').css('-webkit-background-clip','');
     $('.background').css('-webkit-text-fill-color','');
