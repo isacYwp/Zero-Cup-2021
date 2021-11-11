@@ -119,23 +119,20 @@
         font-size: 2.2vh;
     }
 
-    .imgbox .imginfo > div{
+    .imgbox .imginfo .info{
         width: 22%;
         margin: 35px;
         padding: 8px;
         background-color: rgba(45, 45, 45, 0.6);
-        opacity: 0;
+        opacity: 0;        
+        transition: all 0.5s ease-out;
     }
 
-    .imginfo .info:hover{
-        animation: show 0.5s;
+    .imgbox .imginfo .info:hover{
         opacity: 1;
+        transition: all 0.5s ease-out;
     }
 
-    @keyframes show {
-    0% { opacity: 0; }
-    100%{ opacity: 1; }
-}
 @media screen and (max-width: 1600px) {
   html {
       font-size: 16px;
