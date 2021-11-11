@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-11 18:02:31
+ * @LastEditTime: 2021-11-11 20:26:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -39,7 +39,7 @@ document.addEventListener("scroll", () => {
   } else {
     background.style.backgroundPosition = "";
   }
-  if (scroll <= (point + 120)) {
+  if (scroll <= (point + 110)) {
    
     $('.letter1').css('opacity', '0');
     $('.letter2').css('opacity', '0');
@@ -66,14 +66,13 @@ function _openSection(element) {
 
 function _closeSection(element) {
   if (element.classList.contains(expandedClass)) {
+    shutvideo(element.querySelector('.video'));
     element.classList.remove(expandedClass);
     wrapper.classList.remove(hasExpandedClass);
   }
 }
-function playvideo(){
-  if(document.querySelector("#s1video").paused){
-      document.querySelector("#s1video").play();
-  }else document.querySelector("#s1video").pause();
+function shutvideo(element){
+  element.pause();
 }
 
 sections.forEach(function (element) {

@@ -449,6 +449,7 @@ body {
   --image: url(../imgs/sc2_3.jpg);
   --height: 100vh;
   width: 100%;
+  min-width: 100%;
   height: var(--height);
   position: relative;
   background-position: center;
@@ -601,6 +602,20 @@ body {
   color: #fff;
   font-size: 2rem;
   font-weight: 300;
+}
+
+.video {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 150ms linear;
+  will-change: opacity;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.section.is-expanded .video {
+  opacity: 1;
+  
 }
 
 
