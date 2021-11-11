@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-11 17:46:58
+ * @LastEditTime: 2021-11-11 18:02:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -70,12 +70,18 @@ function _closeSection(element) {
     wrapper.classList.remove(hasExpandedClass);
   }
 }
+function playvideo(){
+  if(document.querySelector("#s1video").paused){
+      document.querySelector("#s1video").play();
+  }else document.querySelector("#s1video").pause();
+}
 
 sections.forEach(function (element) {
   element.onclick = function () {
     _openSection(this);
   };
 });
+
 closeButtons.forEach(function (element) {
   element.onclick = function (element) {
     element.stopPropagation();
