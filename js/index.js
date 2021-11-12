@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-02 20:17:12
- * @LastEditTime: 2021-11-10 16:26:34
+ * @LastEditTime: 2021-11-11 20:26:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Zero-Cup-2021\js\index.js
@@ -12,6 +12,8 @@ function playpause(){
       document.querySelector("#s1video").play();
   }else document.querySelector("#s1video").pause();
 }
+
+
 window.onload = function() {
 
 
@@ -37,7 +39,7 @@ document.addEventListener("scroll", () => {
   } else {
     background.style.backgroundPosition = "";
   }
-  if (scroll <= (point + 120)) {
+  if (scroll <= (point + 110)) {
    
     $('.letter1').css('opacity', '0');
     $('.letter2').css('opacity', '0');
@@ -47,6 +49,43 @@ document.addEventListener("scroll", () => {
    $('.letter2').css('opacity', '1');
    $('.letter3').css('opacity', '1');
   }
+});
+
+var wrapper = document.querySelector('.sc2_9'),
+sections = Array.from(document.querySelectorAll('.section')),
+closeButtons = Array.from(document.querySelectorAll('.close-section')),
+expandedClass = 'is-expanded',
+hasExpandedClass = 'has-expanded-item';
+
+function _openSection(element) {
+  if (!element.classList.contains(expandedClass)) {
+    element.classList.add(expandedClass);
+    wrapper.classList.add(hasExpandedClass);
+  }
+}
+
+function _closeSection(element) {
+  if (element.classList.contains(expandedClass)) {
+    shutvideo(element.querySelector('.video'));
+    element.classList.remove(expandedClass);
+    wrapper.classList.remove(hasExpandedClass);
+  }
+}
+function shutvideo(element){
+  element.pause();
+}
+
+sections.forEach(function (element) {
+  element.onclick = function () {
+    _openSection(this);
+  };
+});
+
+closeButtons.forEach(function (element) {
+  element.onclick = function (element) {
+    element.stopPropagation();
+    _closeSection(this.parentElement);
+  };
 });
 
 

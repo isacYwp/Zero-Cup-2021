@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-11-11 09:10:21
+ * @LastEditTime: 2021-11-11 13:04:16
+ * @LastEditors: your name
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \Zero-Cup-2021\README.md
+-->
 # Zero-Cup-2021
 
 &nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;——from 2233 team
@@ -14,7 +22,7 @@
 
 ​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;我们以主题《电影艺术》创作了这一作品，从世界上第一部电影的诞生到现代电影，这份**html**将带观众走入一个从未了解过的电影世界。我们的作品分为两条主线，分别是电影**技术发展史**和电影**流派发展史**，从时间线的角度解构和挖掘存在于荧幕之后的故事和艺术。
 
-- 该项目开源，git链接：[zero-cup-2021](https://github.com/41206703/Zero-Cup-2021)
+- 该项目开源，github链接：[zero-cuo-2021](https://github.com/41206703/Zero-Cup-2021)
 
 
 
