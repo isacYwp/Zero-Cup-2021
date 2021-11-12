@@ -637,6 +637,140 @@ body {
 
 
 
+
+/* 2_6屏 */
+.sc2_6{
+  display: flex;
+  position: relative;
+  background-color: rgb(54, 0, 0);
+  background: linear-gradient(135deg, rgb(34, 33, 33),rgb(48, 20, 20), rgb(34, 33, 33));
+}
+
+.sc2_6 .guessp{
+  position: absolute;
+  font-size: 2rem;
+  font-family: "STZhongsong";
+  color: #baceab;
+}
+
+.box{
+  position: relative;
+  width: 25%;
+}
+
+.cont {
+  width: 20rem;
+  height: 37vh;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  margin: auto;
+  overflow: hidden;
+  filter: blur(10px);
+}
+
+.sc2_6 ul{
+  list-style-image: url(../imgs/list.png);
+  line-height: 1.2rem;
+}
+.sc2_6 li:nth-child(2n){
+  list-style: none;
+}
+
+.mov1{
+  margin-top: 8rem;
+}
+
+.mov1 img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.desc1 {
+  position: absolute;
+  top:10rem;
+  left: 2rem;
+  font-size: 1.3rem;
+  max-width: 85%;
+  cursor: pointer;
+}
+
+.mov3{
+  margin-top: 1rem;
+}
+
+.mov3 img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.desc3 {
+  position: absolute;
+  top:3rem;
+  left: 2rem;
+  font-size: 1.3rem;
+  max-width: 85%;
+  cursor: pointer;
+  color: #ECE9E6;
+}
+
+.mov2{
+  margin-top: 20rem;
+  height: 25vh;
+}
+
+.mov2 img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px ;
+}
+
+.desc2 {
+  position: absolute;
+  top:21rem;
+  left: 2rem;
+  font-size: 1.3rem;
+  max-width: 85%;
+  cursor: pointer;
+  color: #c7c4d4;
+}
+
+.mov4{
+  margin-top: 24rem;
+  height: 27vh;
+}
+
+.mov4 img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px ;
+}
+
+.desc4 {
+  position: absolute;
+  top:25rem;
+  left: 2rem;
+  font-size: 1.3rem;
+  max-width: 85%;
+  cursor: pointer;
+  color: #473400;
+}
+
+.nofilter {
+  filter: blur(0);
+  transition: filter 0.5s ease-in;
+}
+
+.cont .intro p {
+  display: none;
+  margin: 0.3rem;
+}
+
+
+
 @media screen and (max-width: 1600px) {
   html {
       font-size: 16px;
