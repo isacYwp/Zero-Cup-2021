@@ -57,3 +57,28 @@ $(document).ready(function(){
     $(".vidtitle").delay(2500).fadeIn("slow");
     $(".vidintro").delay(3000).fadeIn("slow");
 })
+
+$(".desc1").click(function(){
+  $(".mov1").animate({height:"78vh"});
+  $(".mov1").addClass("nofilter")
+  $(".mov1 .intro p").fadeIn("slow");
+  $(".desc1").fadeOut("slow");
+})
+$(".desc2").click(function(){
+  $(".mov2").animate({height:"78vh",marginTop:"2rem"});
+  $(".mov2").addClass("nofilter")
+  $(".mov2 .intro p").fadeIn("slow");
+  $(".desc2").fadeOut("slow");
+})
+$(".desc3").click(function(){
+  $(".mov3").animate({height:"93vh"});
+  $(".mov3").addClass("nofilter")
+  $(".mov3 .intro p").fadeIn("slow");
+  $(".desc3").fadeOut("slow");
+})
+$(".desc4").click(function(){
+  $(".mov4").animate({height:"70vh",marginTop:"9rem"});
+  $(".mov4").addClass("nofilter")
+  $(".mov4 .intro p").fadeIn("slow");
+  $(".desc4").fadeOut("slow");
+})
