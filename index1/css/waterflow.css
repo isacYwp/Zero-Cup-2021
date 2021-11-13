@@ -7,10 +7,6 @@
     padding: 0;
   }
   
-  body {
-    background-color:;
-  }
-  
   .container {
     display: flex;
     flex-flow: column wrap;
@@ -40,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    counter-increment: items;
+    /* counter-increment: items; */
     content: '';
     font-size: 3rem;
     font-weight: bolder;
