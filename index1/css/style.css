@@ -2,6 +2,32 @@
   box-sizing: border-box;
 }
 
+iframe {
+  width: 85%;
+  height: calc(100vh - 4.25rem);
+  background-color: rgba(46, 46, 46, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: calc(500vh+8rem);
+  transform: translate(-53%,5%);
+  z-index: 19;
+}
+.filter {
+  filter: blur(5px);
+}
+.zhuan {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 130px;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+
 html, body {
   padding: 0;
   margin: 0;

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-04 08:18:30
- * @LastEditTime: 2021-11-06 09:45:05
+ * @LastEditTime: 2021-11-13 17:20:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Editfun
  * @FilePath: \Zero-Cup-2021\index1\js\main.js
@@ -60,3 +60,16 @@ $('.timecard:eq(4)').click(function (){
 $('.timecard:eq(5)').click(function (){
     window.location.href="https://www.zhihu.com/question/36979454/answer/1090443746"
 })
+// $("#ren").hide();
+
+$(".zhuan").click(function (e) {
+    e.preventDefault();
+    $("#ren").fadeToggle();
+    console.log('hi');
+    $('.count6').toggleClass("filter");
+    // $("#ren").css('filter','');
+    // $(".zhuan").css('filter','');  
+    // $(".closeBtn").fadeIn();
+    // $(".sidebar, .imgContainer").css("filter", "blur(10px)");
+});
+

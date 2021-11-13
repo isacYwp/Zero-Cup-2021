@@ -8,7 +8,7 @@
   }
   
   body {
-    background-color: #e1e1e1;
+    background-color:;
   }
   
   .container {
@@ -17,7 +17,7 @@
     padding: 20px;
     width: 1200px;
     /* css 瀑布流布局的缺点，需要手动计算出容器的高度 */
-    height: 960px;
+    height: 1000px;
     margin: auto;
     counter-reset: items;
   }
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     counter-increment: items;
-    content: counter(items);
+    content: '';
     font-size: 3rem;
     font-weight: bolder;
     color: #cccccc;
