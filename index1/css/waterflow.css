@@ -12,7 +12,6 @@
     flex-flow: column wrap;
     padding: 20px;
     width: 1200px;
-    /* css 瀑布流布局的缺点，需要手动计算出容器的高度 */
     height: 1000px;
     margin: auto;
     counter-reset: items;
@@ -33,20 +32,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     /* counter-increment: items; */
     content: '';
     font-size: 3rem;
     font-weight: bolder;
-    color: #cccccc;
     background-color: rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .item-box:hover::after {
-    color: transparent;
     background-color: rgba(0, 0, 0, 0.1);
   }
   

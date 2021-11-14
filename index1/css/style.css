@@ -25,6 +25,10 @@ iframe {
   height: 130px;
   z-index: 10000;
   cursor: pointer;
+  transition: transform .2s ease-in;
+}
+.zhuan:hover {
+  transform: scale(1.1);
 }
 
 
@@ -230,6 +234,8 @@ body {
   background: inherit;
   overflow: hidden;
 }
+
+
 .content::before {
   content: "";
   width: 100%;
@@ -271,7 +277,7 @@ body {
 }
 
 .list-item:hover .item-image::before {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .item-image {
